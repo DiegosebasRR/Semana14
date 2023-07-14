@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana14.MainPage">
+
+    <StackLayout>
+        <Entry Placeholder="Enter Name" x:Name="txtName" HorizontalOptions="FillAndExpand"/>
+        <Entry Placeholder="Enter Description" x:Name="txtDescription" HorizontalOptions="FillAndExpand"/>
+        <Entry Placeholder="Enter Price" x:Name="txtPrice" HorizontalOptions="FillAndExpand"/>
+		<DatePicker MinimumDate="01/01/2018"
+			x:Name="txtDuedate"
+		    MaximumDate="12/31/2024"
+		    Date="06/28/2023" />
+        
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Save" Clicked="Button_Clicked"/>
+            <Button Text="Show" Clicked="Button_Clicked_1"/>
+            
+        </StackLayout>
+        <Button Text="ShowByText" Clicked="Button_Clicked_1"/>
+        
+    </StackLayout>
+
+</ContentPage>
+
